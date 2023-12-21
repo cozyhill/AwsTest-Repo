@@ -1,0 +1,31 @@
+osi 7계층 중에
+
+특정 프로토콜은 어디에 속하는가??
+포트 번호는?
+
+ospf에서
+재분배 하는 방식이 두 개가 있는데
+왜 그렇게 사용하는지
+
+라우팅 경로 설정할 때 무엇을 우선시 하는지 프로토콜 별로 구분하고 이유
+
+스태틱과 다이나믹 상식
+
+ipv4와 ipv6와 차이
+
+PBR
+
+R2(config)#access-list 1 permit host 192.168.1.1
+R2(config)#route-map PBR permit
+R2(config-route-map)#match ip address 1
+
+★★★★★★★★★★★★1
+R2(config-route-map)#set ip next-hop 10.1.24.4
+R2(config-if)#ip policy route-map PBR
+R2#sh route-map PDR
+
+★★★★★★★★★★★★2
+set metric-type type-1
+redistribute connected subnets route-map RE
+route-map RE permit 20
+
