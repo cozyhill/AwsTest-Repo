@@ -27,5 +27,5 @@ R2#sh route-map PDR
 ★★★★★★★★★★★★2
 set metric-type type-1
 redistribute connected subnets route-map RE
-route-map RE permit 20
+route-map RE permit
 
